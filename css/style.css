@@ -94,7 +94,10 @@ hr {
 }
 .navbar-custom {
 	margin-bottom: 0;
-	background-color: #121d1f;
+/*	background-color: #121d1f; */
+	background: url(../img/background.png);
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 	border-radius: 0px;
 	padding: 10px 0;
 }
@@ -636,8 +639,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 /* Footer Section*/
+.fnav {
+
+}
 #footer {
-	background: #121d1f;
+	background: url(../img/background.png);
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 	color: #7d8384;
 	padding: 30px 0 25px 0;
 }
