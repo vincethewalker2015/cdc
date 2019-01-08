@@ -88,7 +88,10 @@ hr {
 	margin-bottom: 30px;
 	border: 0;
 }
+
 /* Navigation */
+
+
 #nav {
 	z-index: 9999;
 }
@@ -178,7 +181,9 @@ hr {
 .btn-primary i.fa {
 	margin-right: 10px;
 }
+
 /* Home Section */
+
 .intro {
 	display: table;
 	width: 100%;
@@ -197,7 +202,9 @@ hr {
 .section-title.center {
 	padding: 25px 0 45px 0;
 }
+
 /* About Section */
+
 #about {
 	padding: 100px 0;
 	background: #f6f6f6;
@@ -218,7 +225,9 @@ hr {
 	margin-bottom: 30px;
 	font-weight: bold;
 }
+
 /* Skills Section */
+
 #skills {
 	padding: 100px 0;
  /* background: #7bc3d1; */
@@ -271,7 +280,9 @@ hr {
 	margin-left: 0.1em;
 	font-size: .8em;
 }
+
 /* Portfolio Section */
+
 #portfolio {
 	padding: 80px 0;
 	background: #ffffff; /* Old browsers */
@@ -405,7 +416,13 @@ ol.type li a:hover {
 	padding: 5px;
 	color: #E87E04;
 }
+
+.mobile-friendly {
+		background: url(../img/background-sml.png);
+}
+
 /* Achivements Section */
+
 #achievements {
 	padding: 100px 0;
 	background: #7bc3d1;
@@ -430,7 +447,9 @@ ol.type li a:hover {
 	padding: 0;
 	margin: 0;
 }
+
 /* Resume Section */
+
 .btn, .res {
 	background: url(../img/background-sml.png);
 	border: 2px solid white;
@@ -538,7 +557,9 @@ ol.type li a:hover {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
 	margin-bottom: 0;
 }
+
 /* Contact Section */
+
 #contact {
 	padding: 100px 0 40px 0;
 	color: #121d1f;
@@ -647,7 +668,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+
 /* Footer Section*/
+
 .fnav {
 
 }
@@ -669,6 +692,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 /* Media Queries */
+
 @media(min-width:768px) {
 .intro {
 	height: 100%;
@@ -757,6 +781,8 @@ header .intro-text {
 
 }
 
+/* DESKTOPS */
+
 @media(min-width:1200px) {
 .timeline>li {
 	min-height: 170px;
@@ -777,14 +803,23 @@ header .intro-text {
 	padding: 10px 100px 20px 20px;
 }
 
+	.mobile-friendly{
+		display: none;
 }
+
+
+}
+
+/* IPHONES */
 
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  
+ /* Makes labels dissapear in smallerscreens */
 { 
 	.portfolio-item{
-	visibility: hidden;
+	display: none;
+	margin-bottom: 10px;
 }
 }
 
@@ -792,6 +827,57 @@ and (max-device-width : 1024px)
 and (min-device-width : 375px) 
 and (max-device-width : 667px) { 
 	.portfolio-item{
-	visibility: hidden;
+	display: none;
+}
+}
+
+/* IPADS */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+	.mobile-friendly{
+	display: none;
+	
+}
+
+
+/* LAPTOPS */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  		.mobile-friendly{
+		 display: none;
+}
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+  	
+  		.mobile-friendly{
+		display: none;
+}
+}
+
+/* DESKTOPS */
+
+/* Desktops and laptops ----------- 
+@media only screen  and (min-width : 1224px) {
+   		.mobile-friendly{
+		visibility: hidden;
+}
+}
+
+/* Large screens ----------- 
+@media only screen  and (min-width : 1824px) {
+		.mobile-friendly{
+		visibility: hidden;
 }
 }
