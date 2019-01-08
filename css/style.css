@@ -152,6 +152,10 @@ hr {
 .navbar-custom .nav li.active a:hover {
 	color: #fff;
 }
+
+.fa, fa-bars {
+	color: #fff;
+}
 .btn-default {
 	color: #fff;
 	background-color: transparent;
@@ -880,4 +884,16 @@ and (max-device-width : 1024px)  {
 		.mobile-friendly{
 		visibility: hidden;
 }
-}
+} */
+
+/* Galaxy S5  */
+
+@media screen and (device-width: 360px) 
+		and (device-height: 640px) 	
+		and (-webkit-device-pixel-ratio: 3) {
+			.portfolio {
+				display: none;
+			}
+			
+			
+		}
