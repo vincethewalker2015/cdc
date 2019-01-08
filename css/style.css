@@ -856,6 +856,9 @@ and (max-device-width : 1024px)  {
   		.mobile-friendly{
 		 display: none;
 }
+		.portfolio-box {
+			height: 70%;
+		}
 }
 
 /* ----------- Retina Screens ----------- */
