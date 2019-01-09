@@ -205,6 +205,7 @@ hr {
 }
 .section-title.center {
 	padding: 25px 0 45px 0;
+
 }
 
 /* About Section */
@@ -360,6 +361,8 @@ ol.type li a:hover {
 	-ms-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
+
+	
 }
 .portfolio-item:hover {
 	-webkit-transform: scale(1.1);
@@ -373,6 +376,9 @@ ol.type li a:hover {
 	overflow: hidden;
 	position: relative;
 }
+
+
+
 .hover-bg .hover-text {
 	position: absolute;
 	text-align: center;
@@ -568,7 +574,8 @@ ol.type li a:hover {
 	padding: 100px 0 40px 0;
 	color: #121d1f;
 	background: url(../img/background.png);
-/*	background: #7bc3d1; */
+	margin-left: 5px;
+	margin-top: 20px;
 }
 #contact h2 {
 	color: #fff;
@@ -679,7 +686,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 }
 #footer {
-	background: url(../img/background-sml.png);
+/*	background: url(../img/background-sml.png); */
 	border-top: 2px solid white;
 	border-bottom: 2px solid white;
 	color: #7d8384;
@@ -693,6 +700,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #footer a:hover {
 	color: #7bc3d1;
+}
+
+/* 	-------------------------------------------------------------HYBRID PAGE -------------------------------------------------------------*/
+#transparent {
+	background-color: transparent;
+}
+.hybrid-background {
+	background: url(../img/background.png);
+}
+.jumbotron {
+	background: transparent;
+}
+
+.sticky {
+	position: -webkit-sticky; /* Safari */
+ 	position: sticky;
+  	top: 0;
 }
 
 /* Media Queries */
@@ -825,6 +849,10 @@ and (max-device-width : 1024px)
 	display: none;
 	margin-bottom: 10px;
 }
+.section-title.center {
+	display: none;
+	height: 50% !important;
+}
 }
 
 @media only screen 
@@ -840,11 +868,14 @@ and (max-device-width : 667px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
-	.mobile-friendly{
+	.portfolio-item{
 	display: none;
 	
 }
-
+.mobile-friendly {
+	display: inline;
+}
+}
 
 /* LAPTOPS */
 
