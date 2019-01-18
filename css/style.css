@@ -720,6 +720,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   	padding: 20px
 }
 
+/*.navbar-brand:hover>.active:not(:hover) > a {
+  visibility: hidden;
+} */
+	
+
+
 /* Media Queries */
 
 @media(min-width:768px) {
